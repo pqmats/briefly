@@ -1,0 +1,61 @@
+Crie um site chamado **Briefly**.
+
+🧠 Objetivo:
+Uma ferramenta que gera **briefings fictícios para projetos de UX/UI**, para que designers possam praticar e alimentar seus portfólios — similar ao conceito do site UX Challenges.
+
+📦 Estrutura do projeto:
+- Stack: **React** (com Vite ou Create React App)
+- Estilo: **Dark mode**, com visual minimalista e tipografia moderna
+- Componentes:
+  1. Tela inicial com logo/texto "Briefly — Gerador de Projetos para Designers"
+  2. Botão “Gerar um desafio”
+  3. Exibição do projeto gerado (como um card ou bloco central)
+  4. Botão "Copiar briefing"
+  5. (Opcional) Botão "Novo briefing"
+  6. Rodapé discreto com link do criador
+
+🎨 Design:
+- Dark mode por padrão
+- Tipografia moderna (ex: Inter, Space Grotesk, DM Sans ou Poppins)
+- Layout centralizado (mobile-first e responsivo)
+- Espaçamento generoso
+- Fundo: #121212
+- Cartões em #1E1E1E ou #2A2A2A
+- Cores de destaque em **roxo**, **azul neon** ou **verde ácido** (apenas detalhes)
+
+🧠 Geração do projeto (via IA):
+- Use uma função interna que gera projetos fictícios aleatórios com IA ou pré-definidos
+- Cada projeto deve conter:
+  - Nome do Projeto
+  - Área (ex: saúde, educação, agro, fintech…)
+  - Tipo (ex: app mobile, dashboard, plataforma web)
+  - Público-alvo
+  - Problema central
+  - Objetivo principal
+  - Funcionalidades essenciais
+  - Duração estimada do desafio (ex: 3 dias, 1 semana…)
+
+Exemplo de projeto gerado:
+---
+📌 **Nome:** NutriMais  
+🧭 **Área:** Saúde e Bem-estar  
+📱 **Tipo:** App mobile  
+🎯 **Objetivo:** Ajudar pessoas com diabetes tipo 2 a controlarem a alimentação  
+👥 **Público-alvo:** Homens e mulheres de 35 a 60 anos  
+⚠️ **Problema:** Falta de controle alimentar em pacientes com restrições  
+🛠️ **Funcionalidades:** Cadastro de refeições, metas diárias, gráficos, alertas  
+⏳ **Duração estimada:** 5 dias
+---
+
+🧠 IA:
+- Você pode simular IA com `Math.random()` selecionando dados de arrays para cada categoria
+- Ou integrar com OpenAI API se quiser gerar com GPT (pode deixar isso separado)
+
+📁 Organização sugerida:
+- `App.jsx`: Estrutura principal
+- `components/ProjectCard.jsx`: Card do projeto gerado
+- `utils/generateBrief.js`: Lógica de geração
+- `styles/global.css`: Dark mode + tipografia
+
+📌 Nome do projeto no navegador: **Briefly — Gerador de Projetos de UX/UI**
+
